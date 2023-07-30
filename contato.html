@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aconchego Prateado - Contato</title>
+    <link rel="stylesheet" href="assets/base.css">
+    <link rel="shortcut icon" type="imagex/png" href="assets\mr.png">
+    <!-- fonts -->
+        <!-- Poppins (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+        <!-- Cinzel (header) -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="index.html">Sobre a Clínica</a></li>
+                <li><a href="horario_atendimento.html">Horário de Atendimento</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <span class="ap">Aconchego Prateado</span>
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <h1>Contato</h1>
+                <br>
+                <form action="/enviar-contato" method="POST">
+                    <!-- Input de Texto -->
+                    <label for="nome">Nome Completo</label><br>
+                    <input type="text" id="nome" name="nome" required>
+                    <br>
+                  
+                    <!-- Input de E-mail -->
+                    <label for="email">E-mail</label><br>
+                    <input type="email" id="email" name="email" required placeholder="seu_email@dominio.com">
+                    <br>
+
+                    <!-- Input de Telefone -->
+                    <label for="telefone">Telefone</label><br>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                    <br>
+
+                    <!-- Input de Seleção (Assunto) -->
+                    <label for="assunto">Assunto</label><br>
+                    <select id="assunto" name="assunto" required>
+                      <option value="duvida-servicos">Dúvida sobre serviços</option>
+                      <option value="agendamento-servico">Agendamento de serviço</option>
+                      <option value="feedback">Feedback</option>
+                      <!-- Adicione outras opções de assunto conforme necessário -->
+                    </select>
+                    <br>
+
+                    <!-- Input de Texto Multilinhas (Mensagem) -->
+                    <label for="mensagem">Mensagem</label><br>
+                    <textarea id="mensagem" name="mensagem" rows="4" required placeholder="Insira aqui a mensagem que deseja nos deixa!"></textarea>
+                    <br>
+
+                    <!-- Input de Localização (opcional) -->
+                    <label for="localizacao">Localização</label><br>
+                    <input type="text" id="localizacao" name="localizacao">
+                    <br>
+
+                    <!-- Checkbox de Consentimento -->
+                    <input type="checkbox" id="consentimento" name="consentimento" required>
+                    <label for="consentimento">Eu concordo em fornecer meus dados para contato.</label>
+                    <br>
+
+                    <!-- Botão de Envio -->
+                    <input type="submit" value="Enviar">
+                  </form>
+                  
+            </div>
+
+    
+            <div class="footer">
+                © 2023 Aconchego Prateado. 
+                <br>
+                MR. &#127800;
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
